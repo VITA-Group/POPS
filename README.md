@@ -78,7 +78,7 @@ See `scripts/` and `experiments/` for the corresponding launchers.
 ```bibtex
 @article{li2026pops,
   title={POPS: Recovering Unlearned Multi-Modality Knowledge in MLLMs with Prompt-Optimized Parameter Shaking},
-  author={Li, Zhangheng and Hong, Junyuan and Zhu, Jianing and Eum, Sungmin and Hu, Shuowen and You, Suya and Wang, Zhangyang},
+  author={Li, Zhangheng and Zhu, Jianing and Hong, Junyuan and Eum, Sungmin and Hu, Shuowen and You, Suya and Wang, Zhangyang},
   journal={Transactions on Machine Learning Research},
   year={2026}
 }
