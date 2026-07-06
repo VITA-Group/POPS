@@ -7,7 +7,7 @@ POPS studies the robustness of multimodal machine unlearning. Machine unlearning
 The attack has two main stages:
 
 - **PromptSuffix optimization** searches for suffix prompts that elicit residual knowledge from an unlearned multimodal model using domain-similar OOD samples.
-- **Parameter shaking / S2L fine-tuning** uses the model's own generated responses to fine-tune lightweight adapters, amplifying weak residual signals into stronger recovery behavior.
+- **Parameter shaking** uses the model's own generated responses to fine-tune lightweight adapters, amplifying weak residual signals into stronger recovery behavior.
 
 Together, these stages provide a stress test for multimodal unlearning methods and help evaluate whether supposedly removed knowledge is actually robustly erased or merely hidden from direct prompting.
 
