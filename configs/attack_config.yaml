@@ -1,0 +1,73 @@
+
+
+
+
+
+
+prompt_optimization:
+  max_iterations: 500
+  learning_rate: 0.01
+  perplexity_weight: 0.1
+  epsilon: 1.0
+  num_suffix_tokens: 20
+  top_k_suffixes: 10
+  num_optimization_restarts: 30
+  embedding_dim: 4096
+
+
+ood_data:
+  source_split: "ood"
+  use_retain_as_ood: true
+  num_ood_samples: 50
+  synthetic_source_split: "ood"
+
+
+s2l_finetuning:
+  lora_rank: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  target_modules: ["q_proj", "v_proj"]
+  learning_rate: 0.0001
+  num_epochs: 3
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  kl_penalty: 0.2
+  max_length: 384
+  warmup_steps: 0
+
+
+perplexity_selection:
+  num_random_inits: 10
+  temperature: 1.0
+
+
+model:
+  model_id: "llava-hf/llava-1.5-7b-hf"
+  torch_dtype: "float16"
+  device_map: "auto"
+
+
+evaluation:
+  forget_ratio: 10
+  tasks: ["classification", "cloze", "generation"]
+  metrics: ["accuracy", "rouge_l", "factuality", "cloze_accuracy"]
+
+
+paths:
+  data_dir: "data/MLLMU-Bench"
+  vanilla_model_dir: null
+  unlearned_model_dir: null
+  output_dir: "attack_results"
+
+
+synthetic_data:
+  num_synthetic_samples: 100
+  decompose_facets: true
+  num_facets_per_sample: 3
+
+
+logging:
+  log_level: "INFO"
+  log_file: "attack_logs.txt"
+  save_intermediate_results: true
+  checkpoint_every_n_steps: 100

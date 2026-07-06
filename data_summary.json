@@ -1,0 +1,129 @@
+{
+  "dataset": "MLLMU-Bench",
+  "splits": {
+    "full_set": {
+      "path": "Full_Set/train-00000-of-00001.parquet",
+      "num_samples": 500,
+      "columns": [
+        "image",
+        "ID",
+        "Directory",
+        "biography",
+        "question",
+        "answer",
+        "Classification_Task",
+        "Generation_Task",
+        "Mask_Task"
+      ]
+    },
+    "retain_set": {
+      "path": "Retain_Set/train-00000-of-00001.parquet",
+      "num_samples": 153,
+      "columns": [
+        "image",
+        "ID",
+        "Directory",
+        "biography",
+        "question",
+        "answer",
+        "Classification_Task",
+        "Generation_Task",
+        "Mask_Task"
+      ]
+    },
+    "ft_data": {
+      "path": "ft_Data/train-00000-of-00001.parquet",
+      "num_samples": 500,
+      "columns": [
+        "image",
+        "ID",
+        "metadata"
+      ]
+    },
+    "forget_5": {
+      "path": "forget_5/train-00000-of-00001.parquet",
+      "num_samples": 25,
+      "columns": [
+        "image",
+        "ID",
+        "biography",
+        "question",
+        "answer",
+        "Classification_Task",
+        "Generation_Task",
+        "Mask_Task"
+      ]
+    },
+    "retain_95": {
+      "path": "retain_95/train-00000-of-00001.parquet",
+      "num_samples": 475,
+      "columns": [
+        "image",
+        "ID",
+        "biography",
+        "question",
+        "answer",
+        "Classification_Task",
+        "Generation_Task",
+        "Mask_Task"
+      ]
+    },
+    "forget_10": {
+      "path": "forget_10/train-00000-of-00001.parquet",
+      "num_samples": 50,
+      "columns": [
+        "image",
+        "ID",
+        "biography",
+        "question",
+        "answer",
+        "Classification_Task",
+        "Generation_Task",
+        "Mask_Task"
+      ]
+    },
+    "retain_90": {
+      "path": "retain_90/train-00000-of-00001.parquet",
+      "num_samples": 450,
+      "columns": [
+        "image",
+        "ID",
+        "biography",
+        "question",
+        "answer",
+        "Classification_Task",
+        "Generation_Task",
+        "Mask_Task"
+      ]
+    },
+    "forget_15": {
+      "path": "forget_15/train-00000-of-00001.parquet",
+      "num_samples": 75,
+      "columns": [
+        "image",
+        "ID",
+        "biography",
+        "question",
+        "answer",
+        "Classification_Task",
+        "Generation_Task",
+        "Mask_Task"
+      ]
+    },
+    "retain_85": {
+      "path": "retain_85/train-00000-of-00001.parquet",
+      "num_samples": 425,
+      "columns": [
+        "image",
+        "ID",
+        "biography",
+        "question",
+        "answer",
+        "Classification_Task",
+        "Generation_Task",
+        "Mask_Task"
+      ]
+    }
+  },
+  "statistics": {}
+}
