@@ -27,7 +27,7 @@ s2l_finetuning:
   lora_alpha: 16
   lora_dropout: 0.05
   target_modules: ["q_proj", "v_proj"]
-  learning_rate: 0.0001
+  learning_rate: 0.000001
   num_epochs: 3
   batch_size: 4
   gradient_accumulation_steps: 4

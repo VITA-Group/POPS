@@ -66,7 +66,7 @@ class S2LFineTuner:
         self.lora_rank = config.get('lora_rank', 8)
         self.lora_alpha = config.get('lora_alpha', 16)
         self.lora_dropout = config.get('lora_dropout', 0.05)
-        self.learning_rate = config.get('learning_rate', 1e-4)
+        self.learning_rate = config.get('learning_rate', 1e-6)
         self.num_epochs = config.get('num_epochs', 3)
         self.batch_size = config.get('batch_size', 4)
         self.gradient_accumulation_steps = config.get('gradient_accumulation_steps', 4)
